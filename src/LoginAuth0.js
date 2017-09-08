@@ -7,7 +7,7 @@ import Auth0Lock from "auth0-lock";
 const createUserQuery = gql`
   mutation($idToken: String!, $name: String!, $email: String!, $picture: String!) {
     createUser(
-      authProvider: { auth0: { idToken: $idToken } }
+      auth0UserId: $idToken
       name: $name
       email: $email
       picture: $picture

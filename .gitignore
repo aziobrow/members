@@ -9,6 +9,9 @@
 # production
 /build
 
+# development
+dev.graphcool
+
 # misc
 .DS_Store
 .env.local
